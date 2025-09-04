@@ -30,7 +30,7 @@ El objetivo es simular un marketplace donde los usuarios puedan registrarse, nav
 ## 🛠️ Tecnologías utilizadas
 
 - **Frontend**: HTML5, CSS3, JavaScript  
-- **Backend**: (Ejemplo: Node.js con Express / Java con Spring Boot / Python con Django – según lo que usen en la cursada)  
+- **Backend**:  Node.js con Express   
 - **Base de datos**: MySQL / PostgreSQL / SQLite  
 - **Control de versiones**: Git + GitHub  
 
