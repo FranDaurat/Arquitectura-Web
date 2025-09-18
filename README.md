@@ -7,9 +7,6 @@ El objetivo es simular un marketplace donde los usuarios puedan registrarse, nav
 
 ## 🚀 Funcionalidades
 
-- 🔐 **Autenticación de usuarios**  
-  Registro, inicio de sesión y gestión de perfiles.
-
 - 📖 **Catálogo de eBooks**  
   Navegación y búsqueda de libros por título, autor o categoría.
 
