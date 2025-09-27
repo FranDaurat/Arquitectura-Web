@@ -1,0 +1,9 @@
+[
+  {
+    "id": "lib_1",
+    "ebookId": "ebk_1",
+    "tags": ["favorito", "leer pronto"],
+    "notes": "Revisar capítulo 3",
+    "favorite": true
+  }
+]

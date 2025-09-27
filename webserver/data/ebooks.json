@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ebk_1",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A Handbook of Agile Software Craftsmanship",
+    "price": 9.99,
+    "categories": ["programming", "best practices"],
+    "rating": 4.8
+  },
+  {
+    "id": "ebk_2",
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "description": "A deep dive into JavaScript core mechanisms.",
+    "price": 7.50,
+    "categories": ["javascript", "frontend"],
+    "rating": 4.6
+  }
+]
