@@ -42,7 +42,6 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 - **GET**    /api/v1/cart
 - **POST**   /api/v1/cart
 - **DELETE** /api/v1/cart/items/:itemId
-
 - **POST**   /api/v1/checkout
 - **POST**   /api/v1/checkout/confirm
 - **GET**    /api/v1/orders/:orderId
@@ -52,7 +51,6 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 - **POST**   /api/v1/library/items
 - **PATCH**  /api/v1/library/items/:itemId
 - **DELETE** /api/v1/library/items/:itemId
-
 - **GET**    /api/v1/library/tags
 - **GET**    /api/v1/library/favorites
 
