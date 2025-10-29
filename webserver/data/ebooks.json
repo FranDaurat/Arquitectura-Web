@@ -4,17 +4,89 @@
     "title": "Clean Code",
     "author": "Robert C. Martin",
     "description": "A Handbook of Agile Software Craftsmanship",
-    "price": 9.99,
-    "categories": ["programming", "best practices"],
+    "price": 25.99,
+    "categories": ["programming", "best-practices", "software-engineering"],
     "rating": 4.8
   },
   {
     "id": "ebk_2",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: Up & Going",
     "author": "Kyle Simpson",
     "description": "A deep dive into JavaScript core mechanisms.",
-    "price": 7.50,
-    "categories": ["javascript", "frontend"],
+    "price": 12.50,
+    "categories": ["javascript", "frontend", "programming"],
+    "rating": 4.6
+  },
+  {
+    "id": "ebk_3",
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "description": "The classic book on software design patterns.",
+    "price": 35.00,
+    "categories": ["design-patterns", "software-engineering", "best-practices"],
+    "rating": 4.7
+  },
+  {
+    "id": "ebk_4",
+    "title": "The Pragmatic Programmer: Your Journey to Mastery",
+    "author": "David Thomas, Andrew Hunt",
+    "description": "A guide to pragmatic programming and software development.",
+    "price": 29.99,
+    "categories": ["programming", "best-practices", "software-engineering"],
+    "rating": 4.9
+  },
+  {
+    "id": "ebk_5",
+    "title": "Eloquent JavaScript, 3rd Edition",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to programming.",
+    "price": 22.00,
+    "categories": ["javascript", "frontend", "programming"],
+    "rating": 4.5
+  },
+  {
+    "id": "ebk_6",
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
+    "description": "189 Programming Questions and Solutions.",
+    "price": 39.99,
+    "categories": ["interview-prep", "algorithms", "data-structures"],
+    "rating": 4.7
+  },
+  {
+    "id": "ebk_7",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+    "description": "The bible of algorithms.",
+    "price": 89.99,
+    "categories": ["algorithms", "data-structures", "computer-science"],
+    "rating": 4.8
+  },
+  {
+    "id": "ebk_8",
+    "title": "Structure and Interpretation of Computer Programs (SICP)",
+    "author": "Harold Abelson, Gerald Jay Sussman, Julie Sussman",
+    "description": "A classic computer science textbook.",
+    "price": 45.00,
+    "categories": ["computer-science", "programming", "lisp"],
+    "rating": 4.9
+  },
+  {
+    "id": "ebk_9",
+    "title": "Refactoring: Improving the Design of Existing Code",
+    "author": "Martin Fowler",
+    "description": "Key principles and practices of refactoring.",
+    "price": 32.50,
+    "categories": ["refactoring", "best-practices", "software-engineering"],
+    "rating": 4.7
+  },
+  {
+    "id": "ebk_10",
+    "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+    "author": "Eric Evans",
+    "description": "A guide to domain-driven design.",
+    "price": 55.00,
+    "categories": ["ddd", "software-architecture", "best-practices"],
     "rating": 4.6
   }
 ]

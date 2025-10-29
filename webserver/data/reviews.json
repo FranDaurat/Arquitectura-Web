@@ -3,7 +3,85 @@
     "id": "rev_1",
     "ebookId": "ebk_1",
     "rating": 5,
-    "comment": "Excelente libro, muy claro.",
-    "nickname": "juan_123"
+    "comment": "Un libro esencial para cualquier desarrollador. ¡Lo recomiendo!",
+    "nickname": "dev_master"
+  },
+  {
+    "id": "rev_2",
+    "ebookId": "ebk_1",
+    "rating": 4,
+    "comment": "Buenos principios, aunque algunos ejemplos están un poco anticuados.",
+    "nickname": "code_critic"
+  },
+  {
+    "id": "rev_4",
+    "ebookId": "ebk_3",
+    "rating": 5,
+    "comment": "El libro de referencia sobre patrones de diseño. Un clásico.",
+    "nickname": "architect_guru"
+  },
+  {
+    "id": "rev_5",
+    "ebookId": "ebk_4",
+    "rating": 5,
+    "comment": "Consejos prácticos y atemporales. Cambió mi forma de programar.",
+    "nickname": "pragmatic_dev"
+  },
+  {
+    "id": "rev_6",
+    "ebookId": "ebk_5",
+    "rating": 4,
+    "comment": "Muy buena introducción a JavaScript, con ejemplos claros.",
+    "nickname": "frontend_learner"
+  },
+  {
+    "id": "rev_7",
+    "ebookId": "ebk_6",
+    "rating": 5,
+    "comment": "Indispensable para prepararse para entrevistas técnicas.",
+    "nickname": "interview_ninja"
+  },
+  {
+    "id": "rev_8",
+    "ebookId": "ebk_7",
+    "rating": 5,
+    "comment": "La biblia de los algoritmos. Denso pero completo.",
+    "nickname": "algo_expert"
+  },
+  {
+    "id": "rev_9",
+    "ebookId": "ebk_9",
+    "rating": 4,
+    "comment": "Excelentes técnicas para mejorar el código existente.",
+    "nickname": "refactor_fan"
+  },
+  {
+    "id": "rev_10",
+    "ebookId": "ebk_10",
+    "rating": 4,
+    "comment": "Un poco abstracto a veces, pero fundamental para software complejo.",
+    "nickname": "ddd_explorer"
+  },
+  {
+    "id": "rev_11",
+    "ebookId": "ebk_1",
+    "rating": 5,
+    "comment": "¡Este libro es oro puro! Lo leo una vez al año.",
+    "nickname": "clean_coder_4ever"
+  },
+  {
+    "id": "rev_12",
+    "ebookId": "ebk_2",
+    "rating": 4,
+    "comment": "Me costó un poco la parte de los prototipos, pero muy buen libro.",
+    "nickname": "js_newbie"
+  },
+  {
+    "id": "lWNHPe0hJi",
+    "ebookId": "ebk_2",
+    "user": "juan",
+    "comment": "si y solo si",
+    "rating": 5,
+    "date": "2025-10-29T20:50:55.544Z"
   }
 ]

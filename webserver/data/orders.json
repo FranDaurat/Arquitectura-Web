@@ -1,8 +1,15 @@
 [
   {
-    "orderId": "ord_1",
-    "items": ["ebk_1", "ebk_2"],
-    "total": 17.49,
-    "createdAt": "2024-11-12T14:32:00Z"
+    "orderId": "pPpgmtdq1O",
+    "items": [
+      {
+        "id": "Of3mrkF7",
+        "ebookId": "ebk_2",
+        "title": "You Don't Know JS: Up & Going",
+        "price": 12.5,
+        "qty": 2
+      }
+    ],
+    "date": "2025-10-29T19:40:22.543Z"
   }
 ]

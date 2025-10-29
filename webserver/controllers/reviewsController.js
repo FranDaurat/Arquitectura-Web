@@ -18,7 +18,6 @@ exports.addReview = (req, res) => {
     const ebookId = req.params.id;
     const { user, comment, rating } = req.body;
 
-    // Validaciones básicas
     if (!user || !comment || !rating) {
       return res.status(400).json({ error: 'Faltan datos obligatorios' });
     }
@@ -59,5 +58,57 @@ exports.getReviewsByEbook = (req, res) => {
     res.json(filtered);
   } catch (err) {
     res.status(500).json({ error: 'Error al obtener las reseñas' });
+  }
+};
+
+exports.getAllReviews = (req, res) => {
+  try {
+    const reviews = getReviews();
+    res.json(reviews);
+  } catch (err) {
+    res.status(500).json({ error: 'Error al obtener las reseñas' });
+  }
+};
+
+exports.updateReview = (req, res) => {
+  try {
+    const reviewId = req.params.reviewId;
+    const updates = req.body;
+
+    const reviews = getReviews();
+    const reviewIndex = reviews.findIndex(r => r.id === reviewId);
+
+    if (reviewIndex === -1) {
+      return res.status(404).json({ error: 'Reseña no encontrada' });
+    }
+
+    const updatedReview = { ...reviews[reviewIndex], ...updates };
+    reviews[reviewIndex] = updatedReview;
+    saveReviews(reviews);
+
+    res.json({ message: 'Reseña actualizada', review: updatedReview });
+
+  } catch (err) {
+    res.status(500).json({ error: 'Error al actualizar la reseña' });
+  }
+};
+
+exports.deleteReview = (req, res) => {
+  try {
+    const reviewId = req.params.reviewId;
+    const reviews = getReviews();
+
+    const newReviews = reviews.filter(r => r.id !== reviewId);
+
+    if (reviews.length === newReviews.length) {
+      return res.status(404).json({ error: 'Reseña no encontrada' });
+    }
+
+    saveReviews(newReviews);
+
+    res.json({ message: 'Reseña eliminada' });
+
+  } catch (err) {
+    res.status(500).json({ error: 'Error al eliminar la reseña' });
   }
 };

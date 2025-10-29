@@ -1,9 +1,3 @@
 {
-  "items": [
-    {
-      "id": "itm_1",
-      "ebookId": "ebk_1",
-      "qty": 1
-    }
-  ]
+  "items": []
 }

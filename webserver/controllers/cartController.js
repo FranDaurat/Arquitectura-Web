@@ -9,6 +9,12 @@ function getCart() {
   return JSON.parse(data);
 }
 
+function getEbooks() {
+  const ebooksPath = path.join(__dirname, '../data/ebooks.json');
+  const data = fs.readFileSync(ebooksPath, 'utf8');
+  return JSON.parse(data);
+}
+
 function saveCart(cart) {
   fs.writeFileSync(cartPath, JSON.stringify(cart, null, 2));
 }
@@ -24,25 +30,42 @@ exports.getCart = (req, res) => {
 
 exports.addToCart = (req, res) => {
   try {
-    const { title, price } = req.body;
+    const { ebookId, quantity } = req.body;
 
-    if (!title || !price) {
-      return res.status(400).json({ error: 'Faltan datos del producto' });
+    if (!ebookId || !quantity) {
+      return res.status(400).json({ error: 'Faltan ebookId o quantity' });
+    }
+
+    const ebooks = getEbooks();
+    const ebookToAdd = ebooks.find(e => e.id === ebookId);
+
+    if (!ebookToAdd) {
+      return res.status(404).json({ error: 'El ebook no existe' });
     }
 
     const cart = getCart();
-    const newItem = {
-      id: generateId(8),
-      title,
-      price
-    };
+    const existingItemIndex = cart.items.findIndex(item => item.ebookId === ebookId);
 
-    cart.items.push(newItem);
+    if (existingItemIndex > -1) {
+      cart.items[existingItemIndex].qty += quantity;
+    } else {
+      const newItem = {
+        id: generateId(8),
+        ebookId: ebookToAdd.id,
+        title: ebookToAdd.title,
+        price: ebookToAdd.price,
+        qty: quantity
+      };
+      cart.items.push(newItem);
+    }
+
     saveCart(cart);
 
-    res.status(201).json({ message: 'Producto agregado al carrito', item: newItem });
+    res.status(201).json({ message: 'Producto agregado al carrito', cart });
+
   } catch (err) {
-    res.status(500).json({ error: 'Error al agregar producto al carrito' });
+    console.error('Error al agregar producto al carrito:', err);
+    res.status(500).json({ error: 'Error interno al agregar producto al carrito' });
   }
 };
 

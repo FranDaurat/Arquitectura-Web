@@ -2,8 +2,59 @@
   {
     "id": "lib_1",
     "ebookId": "ebk_1",
-    "tags": ["favorito", "leer pronto"],
-    "notes": "Revisar capítulo 3",
+    "tags": [
+      "favorito",
+      "para-releer"
+    ],
+    "notes": "Revisar capítulo 5 sobre formato.",
     "favorite": true
+  },
+  {
+    "id": "lib_2",
+    "ebookId": "ebk_4",
+    "tags": [
+      "favorito",
+      "trabajo"
+    ],
+    "notes": "Aplicar el principio de DRY en el proyecto X.",
+    "favorite": true
+  },
+  {
+    "id": "lib_4",
+    "ebookId": "ebk_9",
+    "tags": [
+      "refactoring",
+      "trabajo"
+    ],
+    "notes": "",
+    "favorite": false
+  },
+  {
+    "id": "X8kQLvFL19",
+    "ebookId": "ebk_8",
+    "tags": [],
+    "notes": "kike",
+    "favorite": "true"
+  },
+  {
+    "id": "luFL4xHzrA",
+    "ebookId": "ebk_8",
+    "tags": [],
+    "notes": "kike",
+    "favorite": "true"
+  },
+  {
+    "id": "Q8tkv60Aqb",
+    "ebookId": "ebk_8",
+    "tags": [],
+    "notes": "kike",
+    "favorite": "true"
+  },
+  {
+    "id": "Fpm1ivThQ1",
+    "ebookId": "ebk_8",
+    "tags": "gustavo",
+    "notes": "kike",
+    "favorite": "true"
   }
 ]

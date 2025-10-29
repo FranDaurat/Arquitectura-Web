@@ -53,7 +53,7 @@ exports.confirmCheckout = (req, res) => {
     }
 
     const newOrder = {
-      id: generateId(10),
+      orderId: generateId(10),
       items: cart.items,
       date: new Date().toISOString()
     };

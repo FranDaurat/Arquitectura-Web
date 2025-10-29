@@ -23,9 +23,7 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 
 ## 🛠️ Tecnologías utilizadas
 
-- **Frontend**: HTML5, CSS3, JavaScript
 - **Backend**:  Node.js con Express
-- **Base de datos**: MySQL / PostgreSQL / SQLite
 - **Control de versiones**: Git + GitHub
 
 ---
@@ -55,7 +53,8 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 - **GET**    /api/v1/library/favorites
 
 
-#### ⭐ Reseñas y valoraciones (anónimo)
+### ⭐ Reseñas y valoraciones (anónimo)
+- **GET**    /api/v1/reviews
 - **GET**    /api/v1/ebooks/:id/reviews
 - **POST**   /api/v1/ebooks/:id/reviews
 - **PATCH**  /api/v1/reviews/:reviewId

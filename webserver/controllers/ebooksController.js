@@ -35,7 +35,7 @@ exports.getEbookById = (req, res) => {
 exports.getCategories = (req, res) => {
   try {
     const ebooks = getEbooks();
-    const categories = [...new Set(ebooks.map(e => e.category))];
+    const categories = [...new Set(ebooks.flatMap(e => e.categories))];
     res.json(categories);
   } catch (err) {
     res.status(500).json({ error: 'Error al obtener las categorías' });
