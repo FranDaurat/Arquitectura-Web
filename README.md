@@ -28,6 +28,23 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 
 ---
 
+## 🚀 Instalación y Ejecución
+
+### 1. Instalar dependencias
+Abre una terminal en la raíz del proyecto y ejecuta:
+```bash
+npm install
+```
+
+### 2. Iniciar el servidor
+Para ejecutar la aplicación, usa el siguiente comando:
+```bash
+node webserver/app.js
+```
+El servidor se iniciará en `http://localhost:3000`.
+
+---
+
 ## 📂 Estructura del proyecto
 
 ### 📖 Catálogo de eBooks
@@ -38,7 +55,7 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 
 ### 🛒 Compra de eBooks (carrito + checkout simulado)
 - **GET**    /api/v1/cart
-- **POST**   /api/v1/cart
+- **POST**   /api/v1/cart (Body: `{ "ebookId": "string", "quantity": "number" }`)
 - **DELETE** /api/v1/cart/items/:itemId
 - **POST**   /api/v1/checkout
 - **POST**   /api/v1/checkout/confirm
@@ -46,8 +63,8 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 
 ### 💾 Biblioteca personal (sin descargas)
 - **GET**    /api/v1/library
-- **POST**   /api/v1/library/items
-- **PATCH**  /api/v1/library/items/:itemId
+- **POST**   /api/v1/library/items (Body: `{ "ebookId": "string", "tags": ["string"], "notes": "string", "favorite": "boolean" }`)
+- **PATCH**  /api/v1/library/items/:itemId (Body: `{ "tags": ["string"], "notes": "string", "favorite": "boolean" }`)
 - **DELETE** /api/v1/library/items/:itemId
 - **GET**    /api/v1/library/tags
 - **GET**    /api/v1/library/favorites
@@ -56,8 +73,8 @@ El objetivo es simular un marketplace donde los usuarios puedan navegar sobre el
 ### ⭐ Reseñas y valoraciones (anónimo)
 - **GET**    /api/v1/reviews
 - **GET**    /api/v1/ebooks/:id/reviews
-- **POST**   /api/v1/ebooks/:id/reviews
-- **PATCH**  /api/v1/reviews/:reviewId
+- **POST**   /api/v1/ebooks/:id/reviews (Body: `{ "user": "string", "comment": "string", "rating": "number" }`)
+- **PATCH**  /api/v1/reviews/:reviewId (Body: `{ "user": "string", "comment": "string", "rating": "number" }`)
 - **DELETE** /api/v1/reviews/:reviewId
 
 ---
